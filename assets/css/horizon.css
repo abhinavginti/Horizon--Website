@@ -64,6 +64,7 @@ nav-link {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #home-2 {
@@ -71,6 +72,7 @@ nav-link {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #home-3 {
@@ -78,6 +80,7 @@ nav-link {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 @media (max-width: 767px) {
