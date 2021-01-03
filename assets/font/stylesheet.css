@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Konector (BRK)';
+    src: url('Konector-BRK-.eot');
+    src: url('Konector-BRK-.eot?#iefix') format('embedded-opentype'),
+        url('Konector-BRK-.woff2') format('woff2'),
+        url('Konector-BRK-.woff') format('woff'),
+        url('Konector-BRK-.ttf') format('truetype'),
+        url('Konector-BRK-.svg#Konector-BRK-') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("/assets/font/Konector-BRK-.eot");
+  src: url("/assets/font/Konector-BRK-.woff") format("woff"),
+    url("/assets/font/Konector-BRK-.otf") format("opentype"),
+    url("/assets/font/Konector-BRK-.svg#filename") format("svg");
+}
+
+.font-Konector {
+  font-family: 'CustomFont';
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#nav-menu {
+  position: absolute;
+  z-index: 1;
+}
+
+body, html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+nav-link {
+  text-transform: uppercase;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.box>div {
+  align-self: center;
+}
+
+.glow {
+  -webkit-animation-name: flash;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+
+  animation-name: flash;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Styles for the tilt block */
+#tilt {
+  transition: box-shadow 0.1s, transform 0.1s;
+}
+
+#tilt:hover {
+  cursor: pointer;
+}
+
+#home-1 {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home-2 {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home-3 {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  #navbarNav {
+    position: absolute;
+    margin-left: auto;
+  }
+
+  .hamburger-icon-parent {
+    border: 0px;
+  }
+
+  .hamburger-icon-parent:focus {
+    outline: 0px;
+  }
+
+  .hamburger-icon {
+    width: 100px;
+  }
+
+  .nav-item {
+    /* margin: 85px; */
+  }
+
+  .nav-link {
+    font-size: 60px;
+  }
+
+  .hamburger-icon {}
+
+  #home-1 {
+    background-image: url("/assets/images/originals/home-background-mobile-1.jpg");
+  }
+
+  #home-2 {
+    background-image: url("/assets/images/originals/home-background-mobile-2.jpg");
+  }
+
+  #home-3 {
+    background-image: url("/assets/images/originals/home-background-mobile-3.jpg");
+  }
+
+  #home-1-event-data {
+    position: relative;
+    top: 50vh;
+    color: #fff;
+  }
+
+  .box>div>p {
+    font-size: 40px;
+    color: #a2a2a2;
+    letter-spacing: 4px;
+    font-family: serif;
+  }
+
+  .box>div>p>span {
+    letter-spacing: 5px;
+  }
+
+  .box>div>h1 {
+    font-size: 50px;
+    font-family: serif;
+    font-weight: 900;
+  }
+
+  #social-icons-div {
+    position: relative;
+    top: 65vh;
+    left: 5vw;
+    color: #fff;
+  }
+}
+
+@media (min-width: 767px) {
+  #navbarNav {
+    position: absolute;
+    left: 30vw;
+    margin-right: 10vw;
+  }
+
+  .nav-item {
+    margin: 85px;
+  }
+
+  .nav-link {
+    font-size: 60px;
+  }
+
+  #home-1 {
+    background-image: url("/assets/images/webps/home-background-1.webp");
+  }
+
+  #home-2 {
+    background-image: url("/assets/images/webps/home-background-2.webp");
+  }
+
+  #home-3 {
+    background-image: url("/assets/images/webps/home-background-3.webp");
+  }
+
+  #home-1-event-data {
+    position: relative;
+    top: 50vh;
+    left: -23vw;
+    color: #fff;
+  }
+
+  .box>div>p {
+    font-size: 40px;
+    color: #a2a2a2;
+    letter-spacing: 4px;
+    font-family: serif;
+  }
+
+  .box>div>p>span {
+    letter-spacing: 5px;
+  }
+
+  .box>div>h1 {
+    font-size: 50px;
+    font-family: serif;
+    font-weight: 900;
+  }
+
+  #social-icons-div {
+    position: relative;
+    top: 70vh;
+    left: 2vw;
+    color: #fff;
+  }
+}
+
+.facebook-icon {
+  margin-right: 15px;
+}
+
+.instagram-icon {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+  border-radius: 8%;
+}
+
+@keyframes flash {
+  from {
+    filter: brightness(1);
+  }
+
+  to {
+    filter: brightness(2);
+  }
+}
