@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developers</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <div>
+      <h1>Developers</h1>
+    </div>
+    <section class="content">
+      <div class="card card1 animate__animated animate__backInLeft">
+        <div class="pp"></div>
+        <div class="info">
+          <h3 class="name">Vaishnavi Bisht</h3>
+          <span class="role">Role: UI/UX Designer</span>
+          <div class="links">
+            <a
+              class="fa fa-linkedin-square fa-3x"
+              aria-hidden="true"
+              href="https://linkedin.com/in/vaishnavi-bisht-3301ba171"
+            ></a>
+            <a
+              class="fa fa-github-square fa-3x"
+              aria-hidden="true"
+              href="https://github.com/vnb09"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card card2 animate__animated animate__backInLeft">
+        <div class="pp"></div>
+        <div class="info">
+          <h3 class="name">Sumit Chauhan</h3>
+          <span class="role">Role: Full-Stack Developer</span>
+          <div class="links">
+            <a
+              class="fa fa-linkedin-square fa-3x"
+              aria-hidden="true"
+              href="https://www.linkedin.com/in/sumit02"
+            ></a>
+            <a
+              class="fa fa-github-square fa-3x"
+              aria-hidden="true"
+              href="https://github.com/codeit13"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card card3 animate__animated animate__backInLeft">
+        <div class="pp"></div>
+        <div class="info">
+          <h3 class="name">Abhinav Ginti</h3>
+          <span class="role">Role: Frontend Developer</span>
+          <div class="links">
+            <a
+              class="fa fa-linkedin-square fa-3x"
+              aria-hidden="true"
+              href="https://www.linkedin.com/in/abhinav-ginti-a765911a7"
+            ></a>
+            <a
+              class="fa fa-github-square fa-3x"
+              aria-hidden="true"
+              href="https://github.com/abhinavginti"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card card4 animate__animated animate__backInDown">
+        <div class="pp"></div>
+        <div class="info">
+          <h3 class="name">Riyaz Ahmad</h3>
+          <span class="role">Role: Frontend Developer</span>
+          <div class="links">
+            <a
+              class="fa fa-linkedin-square fa-3x"
+              aria-hidden="true"
+              href="https://github.com/Riyaz-01"
+            ></a>
+            <a
+              class="fa fa-github-square fa-3x"
+              aria-hidden="true"
+              href="https://www.linkedin.com/in/riyaz-ahmad-12b8271b1"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card card5 animate__animated animate__backInRight">
+        <div class="pp"></div>
+        <div class="info">
+          <h3 class="name">Karan Joshi</h3>
+          <span class="role">Role: Frontend Developer</span>
+          <div class="links">
+            <a
+              class="fa fa-linkedin-square fa-3x"
+              aria-hidden="true"
+              href="https://www.linkedin.com/in/karan-joshi-5397591a7"
+            ></a>
+            <a
+              class="fa fa-github-square fa-3x"
+              aria-hidden="true"
+              href="https://github.com/karanjoshi1206"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card card6 animate__animated animate__backInRight">
+        <div class="pp"></div>
+        <div class="info">
+          <h3 class="name">Aditya Joshi</h3>
+          <span class="role">Role: Backend Developer</span>
+          <div class="links">
+            <a
+              class="fa fa-linkedin-square fa-3x"
+              aria-hidden="true"
+              href="https://www.linkedin.com/in/ajadityajoshi"
+            ></a>
+            <a
+              class="fa fa-github-square fa-3x"
+              aria-hidden="true"
+              href="https://github.com/ajadityajoshi"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card card7 animate__animated animate__backInRight">
+        <div class="pp"></div>
+        <div class="info">
+          <h3 class="name">Shubhi Giri</h3>
+          <span class="role">Role: Frontend Developer</span>
+          <div class="links">
+            <a
+              class="fa fa-linkedin-square fa-3x"
+              aria-hidden="true"
+              href="https://www.linkedin.com/in/shubhi-giri-87071b184"
+            ></a>
+            <a
+              class="fa fa-github-square fa-3x"
+              aria-hidden="true"
+              href="https://github.com/Shubhi27"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://use.fontawesome.com/73f9fff53d.js"></script>
+    <script>
+      cards = document.querySelectorAll(".card");
+
+      changeAnimation = () => {
+        if (window.innerWidth < 1024) {
+          document.querySelector(".card").parentElement.style.display = "flex";
+          cards.forEach((card) => {
+            card.classList.remove(card.classList[3]);
+            card.classList.add("animate__bounceInUp");
+          });
+        } else {
+          document.querySelector(".card").parentElement.style.display = "grid";
+        }
+      };
+
+      window.onload = changeAnimation;
+      window.onresize = changeAnimation;
+    </script>
+  </body>
+</html>

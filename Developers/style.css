@@ -1,0 +1,222 @@
+/* fonts */
+
+@font-face {
+  font-family: "Konector -BRK-";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Konector -BRK-"), url("font/konector.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.animate__animated {
+  --animate-duration: 1.3s;
+}
+
+body {
+  background-image: url("source/bg.jpg");
+  background-attachment: fixed;
+  font-family: "Courier New";
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  font-family: "Konector -BRK-";
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: lighter;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.content {
+  height: 680px;
+  width: 80%;
+  margin: auto;
+  display: none;
+  grid-template-columns: 1.9fr 1.2fr 1.9fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1.3fr 1.7fr;
+}
+
+.pp {
+  background-image: url("source/pp.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 5px;
+  grid-column: 1/2;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.name {
+  font-size: 23px;
+  font-weight: bold;
+}
+.role {
+  font-size: 15px;
+}
+.fa {
+  cursor: pointer;
+}
+
+.card1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.card1 .pp {
+  background-image: url("source/pp/Vaishnavi.jpg");
+}
+
+.card2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.card2 .pp {
+  background-image: url("source/pp/Sumit.jpg");
+}
+
+.card3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.card3 .pp {
+  background-image: url("source/pp/Abhinav.jpeg");
+}
+
+.card4 {
+  grid-column: 2/3;
+  grid-row: 2/4;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.3fr 1.7fr;
+}
+
+.card4 .pp {
+  background-image: url("source/pp/Riyaz.jpg");
+  width: 100%;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.card5 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.card5 .pp {
+  background-image: url("source/pp/Karan.jpg");
+}
+
+.card6 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.card6 .pp {
+  background-image: url("source/pp/Aditya.jpg");
+}
+
+.card7 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.card7 .pp {
+  background-image: url("source/pp/Shubhi.png");
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-image: url("source/mbg.jpg");
+    background-color: black;
+    background-size: cover;
+  }
+  h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .content {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+  }
+  .card {
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.404);
+  }
+  .card4 {
+    grid-template-columns: 1.3fr 1.7fr;
+    grid-template-rows: 1fr;
+    text-align: left;
+  }
+  .card4 .pp {
+    height: 100%;
+    width: unset;
+    margin-right: 20px;
+    background-position: right;
+  }
+  .name {
+    font-size: 40px;
+  }
+  .role {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 70px;
+  }
+  .card {
+    height: 200px;
+  }
+  .name {
+    font-size: 23px;
+  }
+  .role {
+    font-size: 15px;
+  }
+}
